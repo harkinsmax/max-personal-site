@@ -1,17 +1,15 @@
 import React, { FC } from 'react';
 import './App.css';
-import NavBar from './Shared/NavBar';
+import NavBar from './components/shared/navBar';
 import { Outlet } from 'react-router-dom';
 
-interface IProps extends React.PropsWithChildren { };
-
-const App: FC<IProps> = (props) => {
+const App: FC = () => {
   return (
     <>
       <NavBar />
       <Outlet />
     </>
   );
-}
+};
 
 export default App;

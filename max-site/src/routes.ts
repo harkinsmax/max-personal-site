@@ -1,7 +1,7 @@
-import About from "./About/About";
-import Blog from "./Blog/Blog";
+import About from "./components/about/about";
+import Blog from "./components/blog/blog";
 import { RouteObject } from "react-router-dom";
-import Home from "./Home/Home";
+import Home from "./components/home/home";
 import App from "./App";
 
 export const routes: RouteObject[] = [
