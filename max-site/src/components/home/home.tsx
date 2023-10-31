@@ -4,7 +4,7 @@ import { setLocationTo } from "../../state/navSlice";
 
 const Home: FC = () => {
   const dispatch = useAppDispatch();
-  dispatch(setLocationTo("about"));
+  dispatch(setLocationTo("home"));
 
   return <>
     <h1>Home</h1><p>Text goes here</p>
