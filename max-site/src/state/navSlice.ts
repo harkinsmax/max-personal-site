@@ -1,7 +1,7 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import type { RootState } from '../store'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import type { RootState } from '../store';
 
-type NavLocation = "blog" | "about" | "home";
+type NavLocation = "blog" | "about" | "home" | "other";
 // Define a type for the slice state
 export interface NavState {
   currentLocation: NavLocation;
@@ -9,8 +9,8 @@ export interface NavState {
 
 // Define the initial state using that type
 const initialState: NavState = {
-  currentLocation: "home"
-}
+  currentLocation: "other"
+};
 
 export const navSlice = createSlice({
   name: "nav",
@@ -21,7 +21,7 @@ export const navSlice = createSlice({
       state.currentLocation = action.payload;
     }
   }
-})
+});
 
 export const { setLocationTo } = navSlice.actions;
 

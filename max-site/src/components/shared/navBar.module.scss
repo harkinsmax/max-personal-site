@@ -1,16 +1,27 @@
+@import "../../dimensions.scss";
+
+$accent-color: #ffb860;
+$background-color-nav-bar: #5a035c;
 
 .navBarLink {
+  margin: 6px;
+  color: white;
+  text-decoration: none;
 
   &.selected {
-    border-bottom: 2px solid #5a035c;
+    border-bottom: 2px solid $accent-color;
     font-weight: bolder;
-    color: #5a035c;
+    color: $accent-color;
   }
 }
 
 .navBarWrapper {
   display:flex;
   flex-direction: row;
-  width: 100%;
-
+  background-color: $background-color-nav-bar;
+  height: $banner-height;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  padding-left: 12px;
+  filter: drop-shadow(2px 0 3px black);
 }

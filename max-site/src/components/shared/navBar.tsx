@@ -11,9 +11,7 @@ interface ILinkProps extends React.PropsWithChildren {
 const NavBarLink: FC<ILinkProps> = (props) => {
   const { toPath, isCurrentLocation, children } = props;
 
-  return <a href={toPath} className={`${styles.navBarLink} ${isCurrentLocation ? styles.selected : ""}`}>{children}</a>;
-
-  //return <Link to={toPath} className={`${styles.navBarLink} ${isCurrentLocation ? styles.selected : ""}`}>{children}</Link>;
+  return <Link to={toPath} className={`${styles.navBarLink} ${isCurrentLocation ? styles.selected : ""}`}>{children}</Link>;
 };
 
 const NavBar: FC = () => {

@@ -1,23 +1,17 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import './App.css';
 import NavBar from './components/shared/navBar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/home/home';
-import Blog from './components/blog/blog';
-import About from './components/about/about';
+import { BrowserRouter } from 'react-router-dom';
+import AppRoutes from './appRoutes';
+import PageContent from './components/shared/pageContent';
 
 const App: FC = () => {
   return (
-    <>
-      <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <PageContent>
+        <AppRoutes />
+      </PageContent>
+    </BrowserRouter>
   );
 };
 

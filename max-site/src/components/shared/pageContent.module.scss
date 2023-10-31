@@ -1,0 +1,35 @@
+@import "../../dimensions.scss";
+
+$background-color-1: #722200;
+$background-color-2: #ac5000;
+$background-color-3: #370332;
+
+.fullPage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background-image: URL("../../../public/bridge.jpg");
+  background-size: cover;
+  background-position-y: 18%;
+  .pageContentOuter {
+    @media only screen and (min-width: $mobile-inflection-px) {
+      margin: 0 100px 0 100px;
+    }
+
+    // Make height exactly match screen height -- leave room for banner
+    height: calc(100vh - $banner-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pageContent {
+      max-width: 800px;
+      width: 100%;
+      flex-grow: 2;
+      background-color: white;
+    }
+  }
+}
