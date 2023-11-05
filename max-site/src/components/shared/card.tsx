@@ -1,11 +1,16 @@
 import { FC } from "react";
 import styles from "./card.module.scss";
+import { resolveClassName } from "../../utils/utils";
 
-const Card: FC<React.PropsWithChildren> = (props) => {
-  const { children } = props;
+interface IProps extends React.PropsWithChildren {
+  className?: string;
+}
+
+const Card: FC<IProps> = (props) => {
+  const { children, className } = props;
 
   return (
-    <div className={styles.card}>
+    <div className={resolveClassName({ [styles.card]: true, className: !!className })}>
       {children}
     </div>);
 };

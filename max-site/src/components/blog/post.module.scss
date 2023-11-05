@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  
+  img {
+    max-width: 80%;
+    max-height: 500px;
+    align-self: center;
+    margin: 5px;
+  }
+}
