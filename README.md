@@ -14,3 +14,5 @@ If I get some time later, it would be nice to come back and add:
  - [ ] A nicer 404 page
  - [ ] Ability to let people post comments on the blog 
  
+ ## Quickstart
+ Make sure you have NPM and Yarn installed. After cloning the repository, run `yarn install` to fetch dependencies. To run locally/debug, run `yarn start`

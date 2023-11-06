@@ -25,3 +25,19 @@ $background-color-nav-bar: #5a035c;
   padding-left: 12px;
   filter: drop-shadow(2px 0 3px black);
 }
+
+.rightSideContent {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+
+  .sourceLink {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 15px;
+  }
+}
