@@ -26,7 +26,7 @@ const Blog: FC = () => {
       <div>Welcome to my blog! I'll use this page to document some of my adventures. I hope you enjoy the read!<br /><br /></div>
       <div>Table of contents:</div>
       {posts.map((post, index) => {
-        return <div key={index}><a href={`#${index}`}>{`${index + 1}. ${post.title}`}</a></div>;
+        return <div key={index}>{`${index + 1}. `}<a href={`#${index}`}>{post.title}</a></div>;
       })}
     </Card>
 
