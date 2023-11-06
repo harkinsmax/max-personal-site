@@ -43,7 +43,7 @@ const Home: FC = () => {
       </div>
       <div className={styles.contactLinks}>
         <a href="https://github.com/harkinsmax" className={styles.linkWithIcon}><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" />GitHub</a>
-        <a href="https://www.linkedin.com/in/donald-max-harkins-5a9546172" className={styles.linkWithIcon}><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" />LinkedIn</a>
+        <a href="https://www.linkedin.com/in/donald-max-harkins-5a9546172" className={styles.linkWithIcon}><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="" />LinkedIn</a>
       </div>
     </Card>
   </>;
