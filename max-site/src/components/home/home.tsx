@@ -22,8 +22,7 @@ const Home: FC = () => {
       I'm Max Harkins, I work as a software developer and in my free time like to play outside. My first name is Donald, but I go by middle name Max.
       I started programming in high school during AP Calculus, where I would program games on my TI 84+ graphing calculator with TI-BASIC.
       My best game had players navigate a maze and look for the exit, and relied on the calculators' matrix memory to store maze layouts --
-      I believe the calculator was limited to less than 10. Unfortunately, all my programs were lost when the standard AA and backup batteries both died,
-      causing the program memory to be cleared.
+      I believe the calculator was limited to less than 10.
       <br /><br />
       In 2020 I received a BS in Computer Science Systems, with a minor in Mathematics. I started out as an Electrical and Computer Engineering
       major, but decided in my sophomore year I was more interested in programming than I was in analog electronics. By doing the Systems option
