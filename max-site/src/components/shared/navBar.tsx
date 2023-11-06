@@ -22,6 +22,7 @@ const NavBar: FC = () => {
 
     <NavBarLink toPath="/blog" isCurrentLocation={curLocation === "blog"}>Stories</NavBarLink>
 
+    <NavBarLink toPath="/about" isCurrentLocation={curLocation === "about"}>About Me</NavBarLink>
     <div className={styles.rightSideContent}>
       <a className={styles.sourceLink} href="https://github.com/harkinsmax/max-personal-site" rel="noreferrer" target="_blank">See the source code</a>
     </div>
