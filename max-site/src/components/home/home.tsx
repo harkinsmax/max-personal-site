@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { useAppDispatch } from "../../hooks";
 import { setLocationTo } from "../../state/navSlice";
 import Card from "../shared/card";
@@ -7,7 +7,7 @@ import styles from "./home.module.scss";
 
 const Home: FC = () => {
   const dispatch = useAppDispatch();
-  dispatch(setLocationTo("home"));
+  useEffect(() => { dispatch(setLocationTo("home")); });
 
   const photosOfMe = [
     { url: "/photos/meHiking.jpg", caption: "Standing on a ridge line in the North Cascades. This was an unseasonably warm October backpacking trip", alt: "Max Harkins standing in front of mountains carrying a large backpack" },

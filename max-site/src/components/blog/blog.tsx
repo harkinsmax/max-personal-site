@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { useAppDispatch } from "../../hooks";
 import { setLocationTo } from "../../state/navSlice";
 import Post, { IBlogPost } from "./post";
@@ -18,7 +18,7 @@ const posts: IBlogPost[] = [
 
 const Blog: FC = () => {
   const dispatch = useAppDispatch();
-  dispatch(setLocationTo("blog"));
+  useEffect(() => { dispatch(setLocationTo("blog")); });
 
   return <>
     <h1>Stories</h1>
@@ -26,12 +26,12 @@ const Blog: FC = () => {
       <div>Welcome to my blog! I'll use this page to document some of my adventures. I hope you enjoy the read!<br /><br /></div>
       <div>Table of contents:</div>
       {posts.map((post, index) => {
-        return <div><a href={`#${index}`}>{`${index + 1}. ${post.title}`}</a></div>;
+        return <div key={index}><a href={`#${index}`}>{`${index + 1}. ${post.title}`}</a></div>;
       })}
     </Card>
 
     {posts.map((post, index) => {
-      return <Post id={`${index}`} {...post} />;
+      return <Post key={index} id={`${index}`} {...post} />;
     })}
   </>;
 };
