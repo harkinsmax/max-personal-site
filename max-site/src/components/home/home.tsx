@@ -19,24 +19,28 @@ const Home: FC = () => {
     <h1>Welcome!</h1>
     <Card>
       <h2>About me</h2>
-      I'm Max Harkins, I work as a software developer and in my free time like to play outside.
-      I like to have hobbies that keep me active, but also enjoy sitting still to read books
-      or binge TV (preferably a nature documentary or comedy).
+      I'm Max Harkins, I work as a software developer and in my free time like to play outside. My first name is Donald, but I go by middle name Max.
+      I started programming in high school during AP Calculus, where I would program games on my TI 84+ graphing calculator with TI-BASIC.
+      My best game had players navigate a maze and look for the exit, and relied on the calculators' matrix memory to store maze layouts --
+      I believe the calculator was limited to less than 10. Unfortunately, all my programs were lost when the standard AA and backup batteries both died,
+      causing the program memory to be cleared.
       <br /><br />
-      If you're my friend, you know that:
-
-      <ul>
-        <li>I have a large appetite, and won't say no to free food. I think things taste the best after a long bike ride.</li>
-        <li>On the topic of food, my favorite foods are pumpkin and pickles.</li>
-        <li>I enjoy listening to bluegrass, and play the guitar and mandolin.</li>
-        <li>I go by Max, which is my middle name. I don't mind if people call me by my first name either, which is Donald.</li>
-        <li>My most recent favorite book is Cadillac Desert by Marc Reisner, and I'm always happy to talk about water usage in the American West.</li>
-      </ul>
+      In 2020 I received a BS in Computer Science Systems, with a minor in Mathematics. I started out as an Electrical and Computer Engineering
+      major, but decided in my sophomore year I was more interested in programming than I was in analog electronics. By doing the Systems option
+      for computer science, I still got to take computer architecture and digital logic design courses, but also got to take high level AI and numerical
+      analysis courses that I found interesting.
+      <br /><br />
+      I take my work seriously, and my leisure time seriously too. When I'm not developing cool new features to improve healthcare through telehealth,
+      I'm rock climbing, skiing, biking, or running. I enjoy kicking back with a good book (current favorite is Cadillac Desert by Marc Reisner), or watching TV too,
+      especially if it's a gray rainy day.
 
       <PhotoGallery photos={photosOfMe} />
     </Card>
     <Card>
       <h2>Get in touch</h2>
+      <div>
+        I'd love to hear from you! You can reach me by email at <a href="mailto: harkinsmax@gmail.com">harkinsmax@gmail.com</a> or through the sites below:
+      </div>
       <div className={styles.contactLinks}>
         <a href="https://github.com/harkinsmax" className={styles.linkWithIcon}><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="" />GitHub</a>
         <a href="https://www.linkedin.com/in/donald-max-harkins-5a9546172" className={styles.linkWithIcon}><img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" />LinkedIn</a>
