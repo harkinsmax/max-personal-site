@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import './App.css';
+import './App.scss';
 import NavBar from './components/shared/navBar';
 import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './appRoutes';

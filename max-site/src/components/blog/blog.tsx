@@ -12,8 +12,8 @@ import { rrg } from "./posts";
 * resources loaded.
 */
 const posts: IBlogPost[] = [
-  { title: "Climbing in the RRG", htmlContent: rrg },
-  { title: "Bikepacking through Montana", htmlContent: "<div>Coming soon</div>" }
+  { title: "Climbing in the RRG", subtitle: "10/5/23 - 10/9/23", htmlContent: rrg },
+  { title: "Bikepacking through Montana", subtitle: "7/15/23 - 8/6/23", htmlContent: "<div>Coming soon</div>" }
 ];
 
 const Blog: FC = () => {
@@ -21,8 +21,9 @@ const Blog: FC = () => {
   dispatch(setLocationTo("blog"));
 
   return <>
-    <h1>Blog</h1>
+    <h1>Stories</h1>
     <Card className={styles.tableOfContents}>
+      <div>Welcome to my blog! I'll use this page to document some of my adventures. I hope you enjoy the read!<br /><br /></div>
       <div>Table of contents:</div>
       {posts.map((post, index) => {
         return <div><a href={`#${index}`}>{`${index + 1}. ${post.title}`}</a></div>;
