@@ -1,17 +1,16 @@
 import { FC } from 'react';
 import './App.scss';
-import NavBar from './components/shared/navBar';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import AppRoutes from './appRoutes';
 import PageContent from './components/shared/pageContent';
 
 const App: FC = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <PageContent>
         <AppRoutes />
       </PageContent>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
